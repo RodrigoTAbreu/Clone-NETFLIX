@@ -1,0 +1,37 @@
+:root{ /*podemos usar variaveis para definir cor por exemplo, isso facilita no momento de alteração de cores do site, sendo necessário a troca em apenas um local e se aplicará para todo o documento e não sair alterando em diversas partes do site */
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+* {      /*o Uso de *(asterisco) significa um reset na pagina toda, tudo que foi definido aqui fica aplicavel a todo documento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta); /* a palavra VAR pega as variáveis predefinidas em ROOT */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{ /*Identificando o Bloco e a classe tudo que foi alterado aqui se aplicará para este item especifico no site. */
+    display: flex;     /* Propriedade flex-box determina como iremos disponibilizar os elementos em tela*/ 
+    flex-direction: row; /*aplicando a direção do flex em linhas */ 
+    align-items: center; /* alinhando os itens no centro*/
+    justify-content: space-between;  /* alinha os itens na tela CENTER etc */ 
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; /*Definindo o tipo de fonte ou a família na qual ela percente como é o caso da fonte TIMES */ 
+    font-size: 40px;
+}
+header nav a {
+    text-decoration: none; /*retira (none) o slublinhado do link */
+    color: #AAA;
+    margin-right: 10px;
+    
+}
+header nav a:hover {
+    color: #fff; /* Quando o mouse passar por cima do elemento NAV o HOVER de a ficará BRANCO(#fff) */
+
+}
