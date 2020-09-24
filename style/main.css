@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ELEMENTOS BASE*/
 body{
+    color:white;
     background: var(--preta); /* a palavra VAR pega as variáveis predefinidas em ROOT */
     font-family:'Times New Roman', Times, serif ;
 }
@@ -34,4 +36,24 @@ header nav a {
 header nav a:hover {
     color: #fff; /* Quando o mouse passar por cima do elemento NAV o HOVER de a ficará BRANCO(#fff) */
 
+}
+/* FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column; /* direção do alinhamento*/
+    justify-content: center; /* segue a direção do flex direction*/
+    align-items: flex-start;/*itens iniciam da esqueda da tela para a direita*/
+
+}
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+.titulo{
+    font-size: 40px;
 }
