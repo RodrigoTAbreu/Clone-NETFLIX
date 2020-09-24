@@ -10,19 +10,19 @@
 }
 body{
     background: var(--preta); /* a palavra VAR pega as variáveis predefinidas em ROOT */
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif ;
 }
 
 header .container{ /*Identificando o Bloco e a classe tudo que foi alterado aqui se aplicará para este item especifico no site. */
     display: flex;     /* Propriedade flex-box determina como iremos disponibilizar os elementos em tela*/ 
-    flex-direction: row; /*aplicando a direção do flex em linhas */ 
+    flex-direction: row; /*aplicando a direção do flex em linhas que já é default */ 
     align-items: center; /* alinhando os itens no centro*/
-    justify-content: space-between;  /* alinha os itens na tela CENTER etc */ 
+    justify-content: space-between;  /* alinha os itens na tela de maneira horizontal*/ 
 }
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times; /*Definindo o tipo de fonte ou a família na qual ela percente como é o caso da fonte TIMES */ 
+    font-family: 'Arial Black'; /*Definindo o tipo de fonte ou a família na qual ela percente como é o caso da fonte TIMES */ 
     font-size: 40px;
 }
 header nav a {
