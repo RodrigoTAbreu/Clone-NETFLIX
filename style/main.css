@@ -52,8 +52,30 @@ header nav a:hover {
 
 }
 .filme-principal .descricao{
+    margin-top: 10px;
     margin-bottom: 90px;
 }
 .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px; /* O PRIMEIRO(15)valor se refere a borda de cima  de de baixo e o SEGUNDO VALOR (30) se refere a esquerda e a direita*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor:pointer; /*determina que o cursor do mouse mude ao apontar no botao */
+    transition: .4s ease all; /*tempo de transição de animação com o Hover por exemplo */
+}
+.botao:hover{ /*altera a cor quando o mouse passa por cima do botão*/
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
 }
