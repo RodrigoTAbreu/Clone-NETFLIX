@@ -12,7 +12,7 @@
 body{
     color:white;
     background: var(--preta); /* a palavra VAR pega as variáveis predefinidas em ROOT */
-    font-family:'Times New Roman', Times, serif ;
+    font-family:'Arial', Times, serif ;
 }
 
 header .container{ /*Identificando o Bloco e a classe tudo que foi alterado aqui se aplicará para este item especifico no site. */
@@ -77,5 +77,21 @@ header nav a:hover {
     color: black;
 }
 .botao i{
-    margin-right: 8px;
+    margin-right: 9px;
+}
+.container{ /*container e wrapper são envelopamentos facilitam na na hora de agrupar elementos e formatá-los de forma unica*/
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{ /*tamanho das imagens do carousel */
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
